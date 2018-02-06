@@ -43,9 +43,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csk-4F-W3f">
+                                <rect key="frame" x="20.5" y="310" width="335" height="64.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaG-Ud-CTJ">
+                                <rect key="frame" x="145" y="379.5" width="85.5" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZS-Jg-PS1">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pQp-tW-KKR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalculatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOC-Eo-P5l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="VZS-Jg-PS1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6b4-kz-3z6"/>
+                            <constraint firstItem="DaG-Ud-CTJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BBN-8h-20J"/>
                             <constraint firstItem="Iqn-6Y-RPX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="P0R-7z-ETK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tho-hQ-q5k" secondAttribute="trailing" constant="20" id="Rwd-Ax-q5Z"/>
                             <constraint firstItem="Tho-hQ-q5k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Sqr-hg-vFl"/>
@@ -53,17 +80,25 @@
                             <constraint firstItem="i5D-UQ-M3Z" firstAttribute="leading" secondItem="Tho-hQ-q5k" secondAttribute="leading" id="YV7-qq-EYE"/>
                             <constraint firstItem="CcC-Oq-NDZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cVh-B6-vxJ"/>
                             <constraint firstItem="Iqn-6Y-RPX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e67-7N-W27"/>
+                            <constraint firstItem="csk-4F-W3f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eXq-dV-JTd"/>
+                            <constraint firstItem="csk-4F-W3f" firstAttribute="width" secondItem="i5D-UQ-M3Z" secondAttribute="width" id="fGm-vU-w92"/>
                             <constraint firstItem="i5D-UQ-M3Z" firstAttribute="height" secondItem="Tho-hQ-q5k" secondAttribute="height" id="h5T-0b-4tn"/>
                             <constraint firstItem="CcC-Oq-NDZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hPl-dm-IKW"/>
                             <constraint firstItem="Tho-hQ-q5k" firstAttribute="top" secondItem="Iqn-6Y-RPX" secondAttribute="bottom" constant="35" id="hj8-od-gSe"/>
+                            <constraint firstItem="csk-4F-W3f" firstAttribute="top" secondItem="i5D-UQ-M3Z" secondAttribute="bottom" constant="45" id="hqz-2b-nsq"/>
                             <constraint firstItem="i5D-UQ-M3Z" firstAttribute="trailing" secondItem="Tho-hQ-q5k" secondAttribute="trailing" id="i4R-1F-aRc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VZS-Jg-PS1" secondAttribute="bottom" constant="20" id="oST-mU-Snn"/>
+                            <constraint firstItem="DaG-Ud-CTJ" firstAttribute="top" secondItem="csk-4F-W3f" secondAttribute="bottom" constant="5" id="rOT-ZQ-l0W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VZS-Jg-PS1" secondAttribute="trailing" constant="20" id="sNg-La-03q"/>
                             <constraint firstItem="i5D-UQ-M3Z" firstAttribute="top" secondItem="Tho-hQ-q5k" secondAttribute="bottom" constant="25" id="u0a-1d-3OH"/>
                             <constraint firstItem="CcC-Oq-NDZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yfK-U8-91z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hoursLbl" destination="DaG-Ud-CTJ" id="ka8-Zz-jPf"/>
                         <outlet property="priceTxt" destination="i5D-UQ-M3Z" id="46s-mD-DKl"/>
+                        <outlet property="resultLbl" destination="csk-4F-W3f" id="KHD-PH-XcS"/>
                         <outlet property="wageTxt" destination="Tho-hQ-q5k" id="CJy-OT-oVN"/>
                     </connections>
                 </viewController>
